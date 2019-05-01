@@ -1,1 +1,283 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  min-width: 800px;
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  font-family: Verdana;
+}
+@media (max-width: 800px) {
+  html,
+  body {
+    min-width: 500px;
+    width: 95%;
+  }
+}
+@media (max-width: 500px) {
+  html,
+  body {
+    min-width: 240px;
+    width: 95%;
+  }
+}
+h1 {
+  font-size: 28px;
+}
+h2 {
+  font-size: 24px;
+  color: slategray;
+}
+hr {
+  width: 100%;
+  border: 1px solid black;
+}
+nav {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px 0;
+  height: auto;
+}
+nav a {
+  text-decoration: none;
+  padding: 5px 10px;
+  color: black;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+@media (max-width: 500px) {
+  nav {
+    justify-content: center;
+  }
+}
+section {
+  margin: 1rem 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+@media (max-width: 800px) {
+  section article {
+    flex-shrink: 40;
+    margin-left: 1rem;
+  }
+}
+@media (max-width: 500px) {
+  section {
+    flex-direction: column;
+  }
+  section article {
+    width: 95%;
+    margin: 0 auto;
+    padding-top: 1.5rem;
+  }
+}
+.button {
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+  border: 1px solid black;
+}
+.header {
+  background: lightgrey;
+  align-items: center;
+  padding: 1.8rem;
+}
+.header h2 {
+  padding: 0.35rem 0;
+}
+.header .image {
+  display: block;
+  width: 45%;
+  height: 100%;
+}
+.header .image img {
+  width: 100%;
+  margin: 0 auto;
+  border: 1px solid black;
+}
+.header article {
+  margin-left: 3rem;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 5;
+  height: 100%;
+  justify-content: space-between;
+}
+.header article p {
+  margin: 0.8rem 0;
+}
+.header article .button {
+  align-self: flex-end;
+  width: 8rem;
+  height: 2.5rem;
+}
+.header article .button:hover {
+  background: black;
+  color: white;
+}
+.header article .button:focus {
+  color: gray;
+  border: 1px solid white;
+}
+@media (max-width: 800px) {
+  .header .image {
+    width: 50%;
+  }
+}
+@media (max-width: 500px) {
+  .header {
+    flex-direction: column;
+  }
+  .header .image {
+    width: 95%;
+    height: unset;
+  }
+  .header article {
+    width: 95%;
+    margin: 0 auto;
+    padding-top: 1.5rem;
+  }
+  .header article .button {
+    align-self: center;
+    width: 16rem;
+  }
+}
